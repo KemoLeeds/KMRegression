@@ -14,8 +14,8 @@ class PredictPipline:
 
     def predict(self,features):
         try:
-            preprocessor_path = os.path.join(os.getcwd(),'artifacts','preprocessor.pkl')
-            model_path = os.path.join(os.getcwd(), 'artifacts', 'model.pkl')
+            preprocessor_path = os.path.join('artifacts','preprocessor.pkl')
+            model_path = os.path.join('artifacts', 'model.pkl')
 
             preprocessor = load_object(preprocessor_path)
             model = load_object(model_path)
